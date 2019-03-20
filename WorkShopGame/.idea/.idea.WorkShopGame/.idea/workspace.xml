@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fa4760d-0de6-44ff-bf5b-913864fe8f3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WorkShopGame/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WorkShopGame/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WorkShopGame/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WorkShopGame/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WorkShopGame/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WorkShopGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WorkShopGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WorkShopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WorkShopGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_Music_Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Music_Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,22 +23,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="1" />
+          <entry key="cs" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="1" />
+          <entry key="C#" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="298" />
+          <entry key="cs" value="1134" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="298" />
+          <entry key="C#" value="1134" />
         </counts>
       </usages-collector>
     </session>
@@ -249,17 +245,125 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Rhytem_Frame_Test.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="294">
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
               <folding>
                 <marker date="1553072026012" expanded="false" signature="6:78" ph="..." />
                 <marker date="1553072026012" expanded="true" signature="126:563" ph="{...}" />
                 <marker date="1553072026012" expanded="true" signature="295:302" ph="{...}" />
                 <marker date="1553072026012" expanded="true" signature="357:561" ph="{...}" />
                 <marker date="1553072026012" expanded="true" signature="391:546" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/System_Notification.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+              <folding>
+                <marker date="1553083981715" expanded="true" signature="6:100" ph="..." />
+                <marker date="1553083981715" expanded="true" signature="150:1320" ph="{...}" />
+                <marker date="1553083981715" expanded="true" signature="328:491" ph="{...}" />
+                <marker date="1553083981715" expanded="true" signature="338:488" ph="{...}" />
+                <marker date="1553083981715" expanded="true" signature="368:401" ph="{...}" />
+                <marker date="1553083981715" expanded="true" signature="409:484" ph="{...}" />
+                <marker date="1553083981715" expanded="true" signature="533:1158" ph="{...}" />
+                <marker date="1553083981715" expanded="true" signature="1210:1256" ph="{...}" />
+                <marker date="1553083981715" expanded="true" signature="1311:1318" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Fungus/Scripts/Components/Clickable2D.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1531866623000" expanded="true" signature="0:242" ph="/* This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.co ... */" />
+                <marker date="1531866623000" expanded="false" signature="250:294" ph="..." />
+                <marker date="1531866623000" expanded="true" signature="312:3612" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="319:629" ph="/// Detects mouse clicks and touches on a Game Object, and sends an event to all Flowchart event handlers in the  ... " />
+                <marker date="1531866623000" expanded="true" signature="739:3610" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="1327:1507" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="1368:1420" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="1556:1814" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="1597:1649" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="1863:1922" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="1970:2105" ph="{...}" />
+                <marker date="1531866623000" expanded="false" signature="2115:2649" ph="Legacy OnMouseX methods" />
+                <marker date="1531866623000" expanded="true" signature="2192:2307" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="2235:2297" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="2354:2469" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="2397:2459" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="2515:2629" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="2558:2619" ph="{...}" />
+                <marker date="1531866623000" expanded="false" signature="2659:2854" ph="Public members" />
+                <marker date="1531866623000" expanded="true" signature="2691:2767" ph="/// Is object clicking enabled. ... " />
+                <marker date="1531866623000" expanded="false" signature="2864:3105" ph="IPointerClickHandler implementation" />
+                <marker date="1531866623000" expanded="true" signature="2971:3085" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="3013:3075" ph="{...}" />
+                <marker date="1531866623000" expanded="false" signature="3115:3356" ph="IPointerEnterHandler implementation" />
+                <marker date="1531866623000" expanded="true" signature="3222:3336" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="3264:3326" ph="{...}" />
+                <marker date="1531866623000" expanded="false" signature="3366:3604" ph="IPointerExitHandler implementation" />
+                <marker date="1531866623000" expanded="true" signature="3471:3584" ph="{...}" />
+                <marker date="1531866623000" expanded="true" signature="3513:3574" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Fungus/Scripts/Editor/FungusEditorResources.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+              <folding>
+                <marker date="1531866635000" expanded="true" signature="0:242" ph="/* This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.co ... */" />
+                <marker date="1531866635000" expanded="false" signature="250:394" ph="..." />
+                <marker date="1531866635000" expanded="true" signature="483:9214" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="594:1095" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="646:1089" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="738:814" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="831:1079" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="919:1024" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="1203:1900" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="1325:1894" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="1384:1884" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="1464:1870" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="1646:1852" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="1969:9212" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="2035:2474" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="2190:2305" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="2370:2464" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="2884:3951" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="2910:3941" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="2962:3893" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="3131:3410" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="3436:3875" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="3504:3648" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="3998:4428" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="4122:4384" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="4484:6979" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="4817:4919" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="5335:6864" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="6123:6261" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="6352:6767" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="7056:7219" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="7114:7209" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="7305:9206" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="7656:8663" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="7743:8649" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="8091:8624" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="8282:8427" ph="{...}" />
+                <marker date="1531866635000" expanded="true" signature="8456:8602" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -272,12 +376,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rhytem_Frame_Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Fungus/Scripts/Editor/FungusEditorResources.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Music.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Fungus/Scripts/Components/Clickable2D.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System_Notification.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Rhytem_Frame_Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/System_Notification.cs" />
       </list>
     </option>
   </component>
@@ -351,12 +459,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553071181942</updated>
-      <workItem from="1553071200042" duration="1305000" />
+      <workItem from="1553071200042" duration="9414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1305000" />
+    <option name="totallyTimeSpent" value="9414000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -616,14 +724,116 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Rhytem_Frame_Test.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="294">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
             <marker date="1553072026012" expanded="false" signature="6:78" ph="..." />
             <marker date="1553072026012" expanded="true" signature="126:563" ph="{...}" />
             <marker date="1553072026012" expanded="true" signature="295:302" ph="{...}" />
             <marker date="1553072026012" expanded="true" signature="357:561" ph="{...}" />
             <marker date="1553072026012" expanded="true" signature="391:546" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Fungus/Scripts/Editor/FungusEditorResources.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+          <folding>
+            <marker date="1531866635000" expanded="true" signature="0:242" ph="/* This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.co ... */" />
+            <marker date="1531866635000" expanded="false" signature="250:394" ph="..." />
+            <marker date="1531866635000" expanded="true" signature="483:9214" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="594:1095" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="646:1089" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="738:814" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="831:1079" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="919:1024" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="1203:1900" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="1325:1894" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="1384:1884" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="1464:1870" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="1646:1852" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="1969:9212" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="2035:2474" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="2190:2305" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="2370:2464" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="2884:3951" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="2910:3941" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="2962:3893" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="3131:3410" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="3436:3875" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="3504:3648" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="3998:4428" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="4122:4384" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="4484:6979" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="4817:4919" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="5335:6864" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="6123:6261" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="6352:6767" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="7056:7219" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="7114:7209" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="7305:9206" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="7656:8663" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="7743:8649" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="8091:8624" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="8282:8427" ph="{...}" />
+            <marker date="1531866635000" expanded="true" signature="8456:8602" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System_Notification.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding>
+            <marker date="1553083981715" expanded="true" signature="6:100" ph="..." />
+            <marker date="1553083981715" expanded="true" signature="150:1320" ph="{...}" />
+            <marker date="1553083981715" expanded="true" signature="328:491" ph="{...}" />
+            <marker date="1553083981715" expanded="true" signature="338:488" ph="{...}" />
+            <marker date="1553083981715" expanded="true" signature="368:401" ph="{...}" />
+            <marker date="1553083981715" expanded="true" signature="409:484" ph="{...}" />
+            <marker date="1553083981715" expanded="true" signature="533:1158" ph="{...}" />
+            <marker date="1553083981715" expanded="true" signature="1210:1256" ph="{...}" />
+            <marker date="1553083981715" expanded="true" signature="1311:1318" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Fungus/Scripts/Components/Clickable2D.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1531866623000" expanded="true" signature="0:242" ph="/* This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.co ... */" />
+            <marker date="1531866623000" expanded="false" signature="250:294" ph="..." />
+            <marker date="1531866623000" expanded="true" signature="312:3612" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="319:629" ph="/// Detects mouse clicks and touches on a Game Object, and sends an event to all Flowchart event handlers in the  ... " />
+            <marker date="1531866623000" expanded="true" signature="739:3610" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="1327:1507" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="1368:1420" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="1556:1814" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="1597:1649" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="1863:1922" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="1970:2105" ph="{...}" />
+            <marker date="1531866623000" expanded="false" signature="2115:2649" ph="Legacy OnMouseX methods" />
+            <marker date="1531866623000" expanded="true" signature="2192:2307" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="2235:2297" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="2354:2469" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="2397:2459" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="2515:2629" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="2558:2619" ph="{...}" />
+            <marker date="1531866623000" expanded="false" signature="2659:2854" ph="Public members" />
+            <marker date="1531866623000" expanded="true" signature="2691:2767" ph="/// Is object clicking enabled. ... " />
+            <marker date="1531866623000" expanded="false" signature="2864:3105" ph="IPointerClickHandler implementation" />
+            <marker date="1531866623000" expanded="true" signature="2971:3085" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="3013:3075" ph="{...}" />
+            <marker date="1531866623000" expanded="false" signature="3115:3356" ph="IPointerEnterHandler implementation" />
+            <marker date="1531866623000" expanded="true" signature="3222:3336" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="3264:3326" ph="{...}" />
+            <marker date="1531866623000" expanded="false" signature="3366:3604" ph="IPointerExitHandler implementation" />
+            <marker date="1531866623000" expanded="true" signature="3471:3584" ph="{...}" />
+            <marker date="1531866623000" expanded="true" signature="3513:3574" ph="{...}" />
           </folding>
         </state>
       </provider>
