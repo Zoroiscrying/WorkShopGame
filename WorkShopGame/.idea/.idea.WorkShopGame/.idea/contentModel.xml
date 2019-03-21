@@ -887,6 +887,7 @@
         <e p="Scripts" t="Include">
           <e p="End_Image_Controller.cs" t="Include" />
           <e p="EnterGateController.cs" t="Include" />
+          <e p="gate_DetectDebug.cs" t="Include" />
           <e p="GermsController.cs" t="Include" />
           <e p="Music.cs" t="Include" />
           <e p="ProgressBarController.cs" t="Include" />

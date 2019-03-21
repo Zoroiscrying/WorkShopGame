@@ -1,21 +1,19 @@
 fileFormatVersion: 2
-guid: c207de86481ff7d48a2fba2fcc374723
+guid: bd52193cbc508fb48b691377a4c43b96
 TextureImporter:
   fileIDToRecycleName:
-    21300000: OptionButton_0
-    21300002: OptionButton_1
-    21300004: OptionButton_2
-    21300006: OptionButton_3
-    21300008: OptionButton_4
-    21300010: OptionButton_5
-    21300012: OptionButton_6
-    21300014: OptionButton_7
-    21300016: OptionButton_8
+    21300000: boom_v2_5_0
+    21300002: boom_v2_5_1
+    21300004: boom_v2_5_2
+    21300006: boom_v2_5_3
+    21300008: boom_v2_5_4
+    21300010: boom_v2_5_5
+    21300012: boom_v2_5_6
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -36,12 +34,12 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 1024
+  textureFormat: 1
+  maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
     filterMode: -1
-    aniso: 16
+    aniso: -1
     mipBias: -100
     wrapU: 1
     wrapV: 1
@@ -55,7 +53,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 20, y: 26, z: 20, w: 20}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -69,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -80,7 +78,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -93,13 +91,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OptionButton_0
+      name: boom_v2_5_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 42.666664
-        width: 21.333334
-        height: 21.333334
+        x: 1178
+        y: 396
+        width: 30
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -107,19 +105,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecc6ed99084d8f8408530d21451e3109
+      spriteID: ebc45010fd9cd424b95fd614789e0087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OptionButton_1
+      name: boom_v2_5_1
       rect:
         serializedVersion: 2
-        x: 21
-        y: 42.666664
-        width: 21.333334
-        height: 21.333334
+        x: 1288
+        y: 415
+        width: 25
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,19 +125,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d10a9a4b07e26a4f97344b13e7c28c6
+      spriteID: 449cc99531d8e97478fecdea659deff1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OptionButton_2
+      name: boom_v2_5_2
       rect:
         serializedVersion: 2
-        x: 42
-        y: 42.666664
-        width: 21.333334
-        height: 21.333334
+        x: 1052
+        y: 327
+        width: 32
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,19 +145,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80e97783cf3932d41a211c37d8eeb8ee
+      spriteID: 90b1c8aecc481074f86a5b7069232bbd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OptionButton_3
+      name: boom_v2_5_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 21.666666
-        width: 21.333334
-        height: 21.333334
+        x: 1060
+        y: 131
+        width: 376
+        height: 282
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,19 +165,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8136b914dc05d94c902f2d11a861043
+      spriteID: a551dcf6e9692054f8d5d7ded204b6b8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OptionButton_4
+      name: boom_v2_5_4
       rect:
         serializedVersion: 2
-        x: 21
-        y: 21.666666
-        width: 21.333334
-        height: 21.333334
+        x: 1035
+        y: 148
+        width: 65
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,19 +185,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f42945293e3ac1e42a84818a78a38745
+      spriteID: a6b3fb6d7e7afad4495816192358d720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OptionButton_5
+      name: boom_v2_5_5
       rect:
         serializedVersion: 2
-        x: 42
-        y: 21.666666
-        width: 21.333334
-        height: 21.333334
+        x: 1128
+        y: 108
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,19 +205,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54fb4c425d359744296118daaf2a40f0
+      spriteID: dbf3227be1b7e5c42909633fdcc78c3c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OptionButton_6
+      name: boom_v2_5_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0.66666603
-        width: 21.333334
-        height: 21.333334
+        x: 1195
+        y: 88
+        width: 62
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,47 +225,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba98d67413dbd22468355b9c51008d46
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OptionButton_7
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 0.66666603
-        width: 21.333334
-        height: 21.333334
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c32be456d9804d44abbd6d9f1f26f0ab
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OptionButton_8
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 0.66666603
-        width: 21.333334
-        height: 21.333334
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6621918c84e0e5945b2a191108fdedec
+      spriteID: 7f96abea058e52349baeb62cd02f4db9
       vertices: []
       indices: 
       edges: []
@@ -275,7 +233,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: aeffaf48e55dff34e831738e5302be1e
+    spriteID: 92c79c4ee2aabaf4386b89cc6ca999ed
     vertices: []
     indices: 
     edges: []

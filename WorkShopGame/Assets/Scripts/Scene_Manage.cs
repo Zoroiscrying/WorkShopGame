@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Animations;
 using UnityEngine.SceneManagement;
 
 
@@ -29,7 +30,7 @@ public class Scene_Manage : MonoBehaviour
 	{
 		//Debug.Log("设置时间为0");
 		Time.timeScale = 0;
-		
+		Music.Pause();
 		//this.gameObject.SetActive(true);
 		_pausePanel.SetActive(true);
 		//_pausePanelAnimator.SetBool("IsPaused",true);
@@ -40,6 +41,7 @@ public class Scene_Manage : MonoBehaviour
 		Time.timeScale = 1;
 		//_pausePanelAnimator.SetBool("IsPaused",false);
 		_pausePanel.SetActive(false);
+		Music.Play(Music.CurrentMusicName);
 	}
 	
 	public void Quit()
