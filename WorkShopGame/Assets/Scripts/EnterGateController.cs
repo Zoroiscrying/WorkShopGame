@@ -8,10 +8,7 @@ public class EnterGateController : MonoBehaviour {
 	public GameObject GermsObj;
 	public int myNum;
 	// public  Component BarControlCompo;
-	public float PercentageR;
-	public float PercentageG;
-	public float PercentageY;
-	public float PercentageP;
+
 	public float GateSideRightX = 65.0f; //判断的是否死亡的临界值，右。确保这个值一定要在collider内！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
 	public float GateSideLeftX = 65.0f; //确保这个值一定要在collider内！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
 	void Start () {
@@ -23,8 +20,9 @@ public class EnterGateController : MonoBehaviour {
 		// if (this.gameObject.transform.position.x < GateSideLeftX && (Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.DownArrow) || Input.GetKeyDown (KeyCode.LeftArrow) || Input.GetKeyDown (KeyCode.RightArrow))) {
 		// 	//惩罚	
 		// 	//寻找最近的一个快速冲过去
-		// }
+		// }\
 		if (entered) {
+			Debug.Log ("this happened");
 			if (arrowPressed == true) return; //avoid cheating(press the button rapidly or sth)
 			switch (this.gameObject.name) {
 				case "Germ_R":

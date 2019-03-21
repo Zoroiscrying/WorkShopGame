@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GermsController : MonoBehaviour {
-	// public Germ[] Germs;
 	public List<Germ> Germs = new List<Germ> ();
+
+
 	public Germ[] GermsOneBeat;
 
 	public Sprite GermSpr_R;
@@ -17,22 +18,19 @@ public class GermsController : MonoBehaviour {
 
 	//randomYArrayNum is related to randomYArray!
 	int randomYArrayNum = 4;
-	float[] randomYArray = { 26.5f, 30.5f, 34, 37.5f }; //相机y范围26-38 /4 
+	float[] randomYArray = { 15.1f, 21.3f, 27.5f, 33.8f }; //相机y范围12-37 /4 
 	int germMaxNum = 2; //4 line 
 
 	float myTimer = 0;
 
 	void Start () {
 		mySprites = new Sprite[4];
-		mySprites[0] = GermSpr_R;
-		mySprites[1] = GermSpr_G;
+		mySprites[3] = GermSpr_R;
 		mySprites[2] = GermSpr_Y;
-		mySprites[3] = GermSpr_P;
+		mySprites[1] = GermSpr_G;
+		mySprites[0] = GermSpr_P;
 
 	}
-	// void Update () {
-	// }　
-
 	//50 times per second
 	private void FixedUpdate () {
 
@@ -47,7 +45,7 @@ public class GermsController : MonoBehaviour {
 			germMaxNum = 4;
 			Debug.Log ("high");
 		}
-		
+
 
 		for (int i = 0; i < Germs.Count; i++) {
 			if (Germs[i] != null) { Germs[i].GermUpdate (); }
@@ -70,18 +68,18 @@ public class GermsController : MonoBehaviour {
 		int[] randomSprNumUsed = new int[4] { 9, 9, 9, 9 }; //numOfGerms
 		GermsOneBeat = new Germ[numOfGerms];
 		float timePerBeat = (float) Music.MusicTimeUnit * Music.UnitPerBeat;
-		float germVelocity = 58.0f / timePerBeat * 0.005f; //gate's position.s /time ,if change!!
+		float germVelocity = 58.8f / timePerBeat * 0.005f; //gate's position.s /time ,if change!!
 
 		for (int i = 0; i < numOfGerms; i++) {
 			int nowRandomNum = GetRandomNum (randomYArrayUsed, randomYArrayNum); //no overlap position!
 			int nowRandomSprNum = GetRandomNum (randomSprNumUsed, germMaxNum); //no some color sprite in a line
 
 			randomYArrayUsed[i] = nowRandomNum;
-			randomSprNumUsed[i] = nowRandomSprNum;
+			// randomSprNumUsed[i] = nowRandomSprNum;
 
 			int GermNumInList = Germs.Count;
 
-			GermsOneBeat[i] = new Germ (0, randomYArray[nowRandomNum], germVelocity, mySprites[nowRandomSprNum], GermNumInList); //x,y,vx
+			GermsOneBeat[i] = new Germ (0, randomYArray[nowRandomNum], germVelocity, mySprites[nowRandomNum], GermNumInList); //x,y,vx
 			Germs.Add (GermsOneBeat[i]);
 			GermsOneBeat[i].MyObj.transform.SetParent (GermsTF);
 		}
@@ -112,14 +110,14 @@ public class Germ {
 		MyObj = new GameObject ();
 		MyObj.name = spr.name;
 		MyObj.AddComponent<SpriteRenderer> ();
+		MyObj.GetComponent<SpriteRenderer>().sortingOrder = 1;//控制同等z坐标，由于浮点数的小误差导致同一层上物体冲突
 		MyObj.AddComponent<BoxCollider2D> ();
 		MyObj.GetComponent<BoxCollider2D> ().isTrigger = true;
 		MyObj.GetComponent<BoxCollider2D> ().size = new Vector2 (1, 1); //??????不初始化碰撞体，太小？？？？？？
 		MyObj.AddComponent<EnterGateController> ();
 		MyObj.GetComponent<EnterGateController> ().myNum = num;
-		MyObj.transform.localScale = new Vector2 (2, 2);
+		MyObj.transform.localScale = new Vector2 (4,4);
 		MyObj.transform.position = new Vector3 (Pos.x, Pos.y, 10);
-		// MyObj.GetComponent<Rigidbody2D> ().isKinematic = true;
 		SpriteRenderer mySprRender = MyObj.GetComponent<SpriteRenderer> ();
 		mySprRender.sprite = spr;
 
