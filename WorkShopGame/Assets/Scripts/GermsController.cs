@@ -7,10 +7,10 @@ public class GermsController : MonoBehaviour {
 	public List<Germ> Germs = new List<Germ> ();
 	public Germ[] GermsOneBeat;
 
-	public Sprite GermSpr_01;
-	public Sprite GermSpr_02;
-	public Sprite GermSpr_03;
-	public Sprite GermSpr_04;
+	public Sprite GermSpr_R;
+	public Sprite GermSpr_G;
+	public Sprite GermSpr_Y;
+	public Sprite GermSpr_P;
 	Sprite[] mySprites;
 
 	public Transform GermsTF;
@@ -18,52 +18,64 @@ public class GermsController : MonoBehaviour {
 	//randomYArrayNum is related to randomYArray!
 	int randomYArrayNum = 4;
 	float[] randomYArray = { 26.5f, 30.5f, 34, 37.5f }; //相机y范围26-38 /4 
-	float[] randomYArrayUsed = new float[4]; 
+	// int[] randomYArrayUsed = new int[4];
+	// int[] randomSprNumUsed = new int[4];
 	//
 	int germMaxNum = 4; //4 line 
 	void Start () {
 		mySprites = new Sprite[4];
-		mySprites[0] = GermSpr_01;
-		mySprites[1] = GermSpr_02;
-		mySprites[2] = GermSpr_03;
-		mySprites[3] = GermSpr_04;
+		mySprites[0] = GermSpr_R;
+		mySprites[1] = GermSpr_G;
+		mySprites[2] = GermSpr_Y;
+		mySprites[3] = GermSpr_P;
+
 	}
-	void Update () {
+	// void Update () {
+	// }　
+
+	//50 times per second
+	private void FixedUpdate () {
 		for (int i = 0; i < Germs.Count; i++) {
 			if (Germs[i] != null) { Germs[i].GermUpdate (); }
 		}
+		//FOR TEST
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			Debug.Log ("您按下了空格键");
+			GeneGermsPerBeat ();
+			Debug.Log ("您按下了SPACE");
 		}
-		if(Music.IsJustChangedBeat()){		
+		if (Music.IsJustChangedBeat ()) {
 			//new some germs in sence when music beat it!
 			GeneGermsPerBeat ();
 		}
-	}　　
+	}　
 	private void GeneGermsPerBeat () {
 		int numOfGerms = Mathf.FloorToInt (Random.Range (0, germMaxNum));
+		int[] randomYArrayUsed = new int[4]{9,9,9,9};//randomYArrayNum
+		int[] randomSprNumUsed = new int[4]{9,9,9,9};//numOfGerms
 		GermsOneBeat = new Germ[numOfGerms];
+		float timePerBeat = (float) Music.MusicTimeUnit * Music.UnitPerBeat;
+		float germVelocity = 58.0f /  timePerBeat*0.005f; //gate's position.s /time ,if change!!
+
 		for (int i = 0; i < numOfGerms; i++) {
-			float nowRandomNum = GetRandomNum (randomYArray, randomYArrayUsed);
+			int nowRandomNum = GetRandomNum (randomYArrayUsed, randomYArrayNum); //no overlap position!
+			int nowRandomSprNum = GetRandomNum (randomSprNumUsed, germMaxNum); //no some color sprite in a line
+
 			randomYArrayUsed[i] = nowRandomNum;
-			GermsOneBeat[i] = new Germ (0, nowRandomNum, 1.1f, GetRandomSpr (randomYArray)); //x,y,vx
+			randomSprNumUsed[i] = nowRandomSprNum;
+
+			GermsOneBeat[i] = new Germ (0, randomYArray[nowRandomNum], germVelocity, mySprites[nowRandomSprNum]); //x,y,vx
 			Germs.Add (GermsOneBeat[i]);
 			GermsOneBeat[i].MyObj.transform.SetParent (GermsTF);
-
 		}
 	}
-	private float GetRandomNum (float[] arr, float[] arrUsed) {　　　　　　　
-		int n = Random.Range (0, randomYArrayNum);
-		while (ArrayContains (arrUsed, arr[n])) { //if the position has been used ,then abondon the position ,randomly generate another one
-			n = Random.Range (0, randomYArrayNum);
+	private int GetRandomNum (int[] arrUsed, int totalNum) {　　　　　　　
+		int n = Random.Range (0, totalNum);
+		while ((ArrayContains (arrUsed, n))) { //if the num has been used ,then abondon the num ,randomly generate another one
+			n = Random.Range (0, totalNum);
 		}
-		return arr[n];　　
+		return n;　　
 	}
-	private Sprite GetRandomSpr (float[] arr) {　　　　　　　
-		int n = Random.Range (0, 4); //num of germs
-		return mySprites[n];
-	}
-	private bool ArrayContains (float[] array, float value) { //whether array contains value 
+	private bool ArrayContains (int[] array, float value) { //whether array contains value 
 		for (int i = 0; i < array.Length; i++) {
 			if (array[i] == value) return true;
 		}
@@ -72,7 +84,7 @@ public class GermsController : MonoBehaviour {
 }
 public class Germ {
 	public Vector2 Pos;
-	public Vector2 V;//velocity
+	public Vector2 V; //velocity
 	public GameObject MyObj;
 	public Germ (float x, float y, float vx, Sprite spr) {
 		Pos.x = x;
@@ -83,10 +95,12 @@ public class Germ {
 		MyObj.name = spr.name;
 		MyObj.AddComponent<SpriteRenderer> ();
 		MyObj.AddComponent<BoxCollider2D> ();
-		MyObj.GetComponent<BoxCollider2D>().isTrigger=true;
-		MyObj.AddComponent<EnterGateController>();
-		MyObj.AddComponent<Rigidbody2D> ();
-		MyObj.GetComponent<Rigidbody2D>().isKinematic=true;
+		MyObj.GetComponent<BoxCollider2D> ().isTrigger = true;
+		MyObj.GetComponent<BoxCollider2D> ().size = new Vector2 (1, 1); //??????不初始化碰撞体，太小？？？？？？
+		MyObj.AddComponent<EnterGateController> ();
+		MyObj.transform.localScale=new Vector2(2,2);
+		MyObj.transform.position=new Vector3(Pos.x,Pos.y,10);
+		// MyObj.GetComponent<Rigidbody2D> ().isKinematic = true;
 		SpriteRenderer mySprRender = MyObj.GetComponent<SpriteRenderer> ();
 		mySprRender.sprite = spr;
 

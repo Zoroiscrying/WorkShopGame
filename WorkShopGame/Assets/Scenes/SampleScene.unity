@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 719250422}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: MyCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -433,9 +433,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProgressBarR: {fileID: 837119248}
   ProgressBarG: {fileID: 1778649041}
-  ProgressBarY: {fileID: 0}
+  ProgressBarY: {fileID: 2013267267}
   ProgressBarP: {fileID: 1636903235}
   PercentageR: 0
+  PercentageG: 0
+  PercentageY: 0
+  PercentageP: 0
 --- !u!1 &837119247
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,7 +764,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1437918768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.9, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -778,10 +781,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 487ad7286fbb5974485a217e7fdb3e12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GermSpr_01: {fileID: 21300000, guid: ba4ddbfcccfe99b4fa01f831550bdf2d, type: 3}
-  GermSpr_02: {fileID: 21300000, guid: aadc8ff23501f3a439ee800cfb62a0da, type: 3}
-  GermSpr_03: {fileID: 21300000, guid: 7514940f68f753d4d88df3f99fb4567d, type: 3}
-  GermSpr_04: {fileID: 21300000, guid: cb8caf8f6a73f6349980ad9ee42f72e4, type: 3}
+  GermSpr_R: {fileID: 21300000, guid: 75e604abf3c00c74bb9335af1de1b969, type: 3}
+  GermSpr_G: {fileID: 21300000, guid: 6d45ae4ca117c3546a551e5d8e07ac8c, type: 3}
+  GermSpr_Y: {fileID: 21300000, guid: 719351c958a05c14ea4245ef4bf68a93, type: 3}
+  GermSpr_P: {fileID: 21300000, guid: 9ed8bf70f101e3b4487d3a6ff74e42d4, type: 3}
   GermsTF: {fileID: 1437918769}
 --- !u!1 &1636903234
 GameObject:
@@ -861,12 +864,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1732239806}
   - component: {fileID: 1732239805}
-  - component: {fileID: 1732239807}
   - component: {fileID: 1732239808}
   - component: {fileID: 1732239804}
+  - component: {fileID: 1732239807}
   m_Layer: 0
-  m_Name: New Sprite
-  m_TagString: Untagged
+  m_Name: Gate
+  m_TagString: MyGate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -883,18 +886,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.020353317, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.74, y: 1.74}
-    newSize: {x: 1.74, y: 1.74}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.74, y: 1.74}
+  m_Size: {x: 3.77, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1732239805
 SpriteRenderer:
@@ -931,12 +934,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ba4ddbfcccfe99b4fa01f831550bdf2d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6f62c397230d6d845b87a8e53d67c0e1, type: 3}
+  m_Color: {r: 0.534978, g: 0.48584908, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.74, y: 1.74}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -949,8 +952,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1732239803}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58, y: 32.3, z: 0}
-  m_LocalScale: {x: 7.192263, y: 7.192263, z: 7.192263}
+  m_LocalPosition: {x: 58, y: 31.8, z: 0}
+  m_LocalScale: {x: 3.8, y: 13.63589, z: 13.63589}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -963,9 +966,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1732239803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70571ecd17c142148ab4c0258ddce041, type: 3}
+  m_Script: {fileID: 11500000, guid: 59fb911ef45336f428989f3d1340d3f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  e_distance: 5
+  g_distance: 10
 --- !u!50 &1732239808
 Rigidbody2D:
   serializedVersion: 4
