@@ -8,6 +8,7 @@ TagManager:
   - Laser
   - MyCanvas
   - MyGate
+  - MyGerms
   layers:
   - Default
   - TransparentFX
