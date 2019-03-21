@@ -5,9 +5,11 @@ using UnityEngine;
 public class GermsController : MonoBehaviour {
 	public List<Germ> Germs = new List<Germ> ();
 
-
 	public Germ[] GermsOneBeat;
 
+	public GameObject BoomEffect_Good;
+	public GameObject BoomEffect_Excellent;
+	
 	public Sprite GermSpr_R;
 	public Sprite GermSpr_G;
 	public Sprite GermSpr_Y;
@@ -82,6 +84,8 @@ public class GermsController : MonoBehaviour {
 			GermsOneBeat[i] = new Germ (0, randomYArray[nowRandomNum], germVelocity, mySprites[nowRandomNum], GermNumInList); //x,y,vx
 			Germs.Add (GermsOneBeat[i]);
 			GermsOneBeat[i].MyObj.transform.SetParent (GermsTF);
+			GermsOneBeat[i].MyObj.GetComponent<EnterGateController>().BoomEffect_Good = this.BoomEffect_Good;
+			GermsOneBeat[i].MyObj.GetComponent<EnterGateController>().BoomEffect_Excellent = this.BoomEffect_Excellent;
 		}
 	}
 	private int GetRandomNum (int[] arrUsed, int totalNum) {　　　　　　　

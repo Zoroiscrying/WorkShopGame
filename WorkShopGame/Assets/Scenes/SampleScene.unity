@@ -318,8 +318,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 0.8772963, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -336,7 +336,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 288726436}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738655805}
+        m_MethodName: LoadStartScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &288726436
@@ -568,8 +579,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 0.8772963, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -586,7 +597,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 668045565}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738655805}
+        m_MethodName: RestartThisScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &668045565
@@ -741,6 +763,12 @@ MonoBehaviour:
   PercentageG: 0
   PercentageY: 0
   PercentageP: 0
+--- !u!114 &738655805 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114967609953755744, guid: 71856f7b82a783d40858dce508ebc465,
+    type: 2}
+  m_PrefabInternal: {fileID: 2004878257}
+  m_Script: {fileID: 11500000, guid: 6d97ae86d7f44b2458a0789f37dd942b, type: 3}
 --- !u!1 &837119247
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,6 +779,7 @@ GameObject:
   - component: {fileID: 837119250}
   - component: {fileID: 837119249}
   - component: {fileID: 837119248}
+  - component: {fileID: 837119251}
   m_Layer: 5
   m_Name: ProgressBarRed
   m_TagString: Untagged
@@ -781,7 +810,7 @@ MonoBehaviour:
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -807,9 +836,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 708, y: 68}
-  m_SizeDelta: {x: 250.6, y: 70.8}
+  m_AnchoredPosition: {x: 778, y: 67}
+  m_SizeDelta: {x: 3000, y: 1400}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &837119251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 837119247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578d2c525f985d74bb233a72aa027075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlowThreshold: 0.2
+  GlowSprite: {fileID: 21300000, guid: 07923de9154e5ee4bbb58b843cff9894, type: 3}
 --- !u!1 &1025796994
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,8 +1022,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 0.8772963, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -998,7 +1040,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1189066034}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738655805}
+        m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1189066034
@@ -1222,6 +1275,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 487ad7286fbb5974485a217e7fdb3e12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BoomEffect_Good: {fileID: 1327075740056770, guid: 4e7de98ac02a9724f960e5e67d4ea7f0,
+    type: 2}
+  BoomEffect_Excellent: {fileID: 1884710676950916, guid: f414486f8941f0e4c9c5c412a6ed00e7,
+    type: 2}
   GermSpr_R: {fileID: 21300000, guid: 75e604abf3c00c74bb9335af1de1b969, type: 3}
   GermSpr_G: {fileID: 21300000, guid: 6d45ae4ca117c3546a551e5d8e07ac8c, type: 3}
   GermSpr_Y: {fileID: 21300000, guid: 6d45ae4ca117c3546a551e5d8e07ac8c, type: 3}
@@ -1237,6 +1294,7 @@ GameObject:
   - component: {fileID: 1636903237}
   - component: {fileID: 1636903236}
   - component: {fileID: 1636903235}
+  - component: {fileID: 1636903238}
   m_Layer: 5
   m_Name: ProgressBarPurple
   m_TagString: Untagged
@@ -1267,7 +1325,7 @@ MonoBehaviour:
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -1293,9 +1351,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 708, y: -184}
-  m_SizeDelta: {x: 250.6, y: 70.8}
+  m_AnchoredPosition: {x: 778, y: -182}
+  m_SizeDelta: {x: 3000, y: 1400}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1636903238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1636903234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578d2c525f985d74bb233a72aa027075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlowThreshold: 1
+  GlowSprite: {fileID: 21300000, guid: 479e857df3c8e014b94d4ebd8f1fd820, type: 3}
 --- !u!1 &1732239803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,6 +1513,7 @@ GameObject:
   - component: {fileID: 1778649039}
   - component: {fileID: 1778649042}
   - component: {fileID: 1778649041}
+  - component: {fileID: 1778649040}
   m_Layer: 5
   m_Name: ProgressBarGreen
   m_TagString: Untagged
@@ -1464,9 +1536,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 712, y: 184}
-  m_SizeDelta: {x: 250.6, y: 70.8}
+  m_AnchoredPosition: {x: 778, y: 185}
+  m_SizeDelta: {x: 3000, y: 1400}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1778649040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1778649038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578d2c525f985d74bb233a72aa027075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlowThreshold: 0.5
+  GlowSprite: {fileID: 21300000, guid: b9e374c7ba082334f9ecd2c61713c3c4, type: 3}
 --- !u!114 &1778649041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1490,7 +1575,7 @@ MonoBehaviour:
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -1574,7 +1659,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &1995728117
 RectTransform:
@@ -1598,6 +1683,58 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &2004878257
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4865803150220226, guid: 71856f7b82a783d40858dce508ebc465, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865803150220226, guid: 71856f7b82a783d40858dce508ebc465, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865803150220226, guid: 71856f7b82a783d40858dce508ebc465, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865803150220226, guid: 71856f7b82a783d40858dce508ebc465, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865803150220226, guid: 71856f7b82a783d40858dce508ebc465, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865803150220226, guid: 71856f7b82a783d40858dce508ebc465, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865803150220226, guid: 71856f7b82a783d40858dce508ebc465, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865803150220226, guid: 71856f7b82a783d40858dce508ebc465, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 224587913528795912, guid: 71856f7b82a783d40858dce508ebc465,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -200
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557811605108598, guid: 71856f7b82a783d40858dce508ebc465,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 200
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71856f7b82a783d40858dce508ebc465, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &2013267265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +1745,7 @@ GameObject:
   - component: {fileID: 2013267266}
   - component: {fileID: 2013267268}
   - component: {fileID: 2013267267}
+  - component: {fileID: 2013267269}
   m_Layer: 5
   m_Name: ProgressBarYellow
   m_TagString: Untagged
@@ -1630,8 +1768,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 712, y: -73}
-  m_SizeDelta: {x: 250.6, y: 70.8}
+  m_AnchoredPosition: {x: 778, y: -65}
+  m_SizeDelta: {x: 3000, y: 1400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2013267267
 MonoBehaviour:
@@ -1656,7 +1794,7 @@ MonoBehaviour:
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -1667,3 +1805,16 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2013267265}
   m_CullTransparentMesh: 0
+--- !u!114 &2013267269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013267265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578d2c525f985d74bb233a72aa027075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlowThreshold: 0.7
+  GlowSprite: {fileID: 21300000, guid: 834f169ed5422734f9faf048371783f4, type: 3}

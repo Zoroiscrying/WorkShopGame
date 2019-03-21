@@ -6,6 +6,10 @@ public class EnterGateController : MonoBehaviour {
 	public GameObject CanvasObj;
 	public GameObject GateObj;
 	public GameObject GermsObj;
+
+	public GameObject BoomEffect_Good;
+	public GameObject BoomEffect_Excellent;
+	
 	public int myNum;
 	// public  Component BarControlCompo;
 
@@ -106,10 +110,11 @@ public class EnterGateController : MonoBehaviour {
 		}
 
 		if (myGrade != 0) {
-			PlaySuccess ();
 			if (myGrade == 11) {
+				PlaySuccess (false);
 				Debug.Log ("excellent" + myGrade);
 			} else if (myGrade == 1) {
+				PlaySuccess (true);
 				Debug.Log ("good" + myGrade);
 			}
 		} else {
@@ -144,6 +149,26 @@ public class EnterGateController : MonoBehaviour {
 		this.gameObject.GetComponent<SpriteRenderer> ().color = Color.black;
 		Destroy (this.gameObject);
 	}
+	
+	void PlaySuccess (bool isGood) {
+		if (isGood)
+		{
+			this.gameObject.GetComponent<SpriteRenderer> ().color = Color.black;
+			var obj = Instantiate(BoomEffect_Good, this.transform.position, Quaternion.identity);
+			Destroy(obj,1.0f);
+			Destroy (this.gameObject);			
+		}
+		else
+		{
+			Debug.Log("Excellent Boom");
+			this.gameObject.GetComponent<SpriteRenderer> ().color = Color.black;
+			var obj = Instantiate(BoomEffect_Excellent, this.transform.position, Quaternion.identity);
+			Destroy(obj,1.0f);
+			Destroy (this.gameObject);	
+		}
+
+	}
+	
 	void germRePosition () {
 
 	}

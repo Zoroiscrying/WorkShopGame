@@ -885,6 +885,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="BarGlowScript.cs" t="Include" />
           <e p="End_Image_Controller.cs" t="Include" />
           <e p="EnterGateController.cs" t="Include" />
           <e p="gate_DetectDebug.cs" t="Include" />
