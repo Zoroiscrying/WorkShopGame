@@ -885,8 +885,13 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="End_Image_Controller.cs" t="Include" />
+          <e p="EnterGateController.cs" t="Include" />
+          <e p="GermsController.cs" t="Include" />
           <e p="Music.cs" t="Include" />
+          <e p="ProgressBarController.cs" t="Include" />
           <e p="Rhytem_Frame_Test.cs" t="Include" />
+          <e p="Scene_Manage.cs" t="Include" />
           <e p="System_Notification.cs" t="Include" />
         </e>
       </e>

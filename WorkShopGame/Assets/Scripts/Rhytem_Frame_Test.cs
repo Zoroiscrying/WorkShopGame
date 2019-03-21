@@ -18,17 +18,14 @@ public class Rhytem_Frame_Test : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		if (Music.IsJustChangedBeat())
-		{
-			Debug.Log("JustChangedBar");
-			Instantiate(prefab, this.transform.position + new Vector3(x,y,z), Quaternion.identity);
-			nums++;
-			x+=0.05f;
-		}
+//		if (Music.IsJustChangedBeat())
+//		{
+//			Debug.Log("JustChangedBar");
+//			Instantiate(prefab, this.transform.position + new Vector3(x,y,z), Quaternion.identity);
+//			nums++;
+//			x+=0.05f;
+//		}
 
-
-		
-			
-		
+		//Debug.Log(Music.MusicalTimeBar);
 	}
 }
