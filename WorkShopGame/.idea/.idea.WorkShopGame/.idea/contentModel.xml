@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="End_Scene_Star_Script.cs" t="Include" />
         <e p="Fungus" t="Include">
           <e p="Docs" t="Include">
             <e p="LICENSE.txt" t="Include" />
@@ -884,6 +885,7 @@
             </e>
           </e>
         </e>
+        <e p="Instruction.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="BarGlowScript.cs" t="Include" />
           <e p="End_Image_Controller.cs" t="Include" />

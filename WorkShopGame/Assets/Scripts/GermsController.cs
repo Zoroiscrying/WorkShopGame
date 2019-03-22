@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GermsController : MonoBehaviour
 {
@@ -27,13 +28,24 @@ public class GermsController : MonoBehaviour
 
     //randomYArrayNum is related to randomYArray!
     int randomYArrayNum = 4;
-    float[] randomYArray = {15.1f, 21.3f, 27.5f, 33.8f}; //相机y范围12-37 /4 
+    float[] randomYArray = {15.8f, 21.5f, 27.5f, 33.8f}; //相机y范围12-37 /4 
     int germMaxNum = 2; //4 line 
 
     float myTimer = 0;
+    
+    public GameObject CanvasObj;
+    
+    public float BarRFinalPercent;
+    public float BarGFinalPercent;
+    public float BarYFinalPercent;
+    public float BarPFinalPercent;
+
+    private float WholePercentage;
+    public int StarNum=0;
 
     void Start()
     {
+        DontDestroyOnLoad(this.gameObject);
         mySprites = new Sprite[4];
         mySprites[3] = GermSpr_R;
         mySprites[2] = GermSpr_Y;
@@ -45,19 +57,43 @@ public class GermsController : MonoBehaviour
     private void FixedUpdate()
     {
         myTimer += Time.deltaTime;
-        if (myTimer > 5)
+        if (myTimer > 35)
         {
-            germMaxNum = 3;
+            germMaxNum = 2;
             Debug.Log("mid");
             //mid
         }
 
-        if (myTimer > 10)
+        if (myTimer > 70)
         {
             //high
-            germMaxNum = 4;
+            germMaxNum = 3;
             Debug.Log("high");
         }
+        
+        ////////////////////////////////
+        if (myTimer >= 120)
+        {
+            BarRFinalPercent = CanvasObj.GetComponent<ProgressBarController>().PercentageR;
+            BarGFinalPercent = CanvasObj.GetComponent<ProgressBarController>().PercentageG;
+            BarYFinalPercent = CanvasObj.GetComponent<ProgressBarController>().PercentageY;
+            BarPFinalPercent = CanvasObj.GetComponent<ProgressBarController>().PercentageP;
+            WholePercentage = BarRFinalPercent + BarGFinalPercent + BarYFinalPercent + BarPFinalPercent;
+            if (WholePercentage>=0.0f && WholePercentage <= 2.0f)
+            {
+                StarNum = 1;
+            }else if (WholePercentage > 2.0f && WholePercentage <= 3.0f)
+            {
+                StarNum = 2;
+            }else if (WholePercentage >3.0f && WholePercentage <= 4.0f)
+            {
+                StarNum = 3;
+            }
+            
+            SceneManager.LoadScene(2);
+            
+        }
+ 
 
 
         for (int i = 0; i < Germs.Count; i++)
@@ -167,7 +203,7 @@ public class Germ
         MyObj.GetComponent<BoxCollider2D>().size = new Vector2(1, 1); //??????不初始化碰撞体，太小？？？？？？
         MyObj.AddComponent<EnterGateController>();
         MyObj.GetComponent<EnterGateController>().myNum = num;
-        MyObj.transform.localScale = new Vector2(4, 4);
+        MyObj.transform.localScale = new Vector2(2.5f, 2.5f);
         MyObj.transform.position = new Vector3(Pos.x, Pos.y, 10);
         SpriteRenderer mySprRender = MyObj.GetComponent<SpriteRenderer>();
         mySprRender.sprite = spr;

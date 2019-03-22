@@ -18,10 +18,11 @@ public class ProgressBarController : MonoBehaviour {
 	public float PercentageG = 0;
 	public float PercentageY = 0;
 	public float PercentageP = 0;
+
 	public void Awake () {
-		MyProgressBarR = new MyProgressBar (ProgressBarR.transform, ProgressBarR, 0.8f);
-		MyProgressBarG = new MyProgressBar (ProgressBarG.transform, ProgressBarG, 0.9f);
-		MyProgressBarY = new MyProgressBar (ProgressBarY.transform, ProgressBarY, 0.7f);
+		MyProgressBarR = new MyProgressBar (ProgressBarR.transform, ProgressBarR, 1.0f);
+		MyProgressBarG = new MyProgressBar (ProgressBarG.transform, ProgressBarG, 1.0f);
+		MyProgressBarY = new MyProgressBar (ProgressBarY.transform, ProgressBarY, 1.0f);
 		MyProgressBarP = new MyProgressBar (ProgressBarP.transform, ProgressBarP, 1.0f);
 	}
 	void FixedUpdate () {
@@ -44,7 +45,7 @@ public class MyProgressBar {
 		progressBar.fillOrigin = 0;
 	}
 	public void SetProgressValue (float value) {
-		if (value >= percentLimted) {
+		if (value >= percentLimted+0.5f) {
 			// Debug.Log ("达到限制啦！");  需要设计的素材，体现达到了限制
 			return;
 		}
