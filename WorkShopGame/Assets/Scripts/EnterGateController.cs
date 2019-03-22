@@ -11,10 +11,12 @@ public class EnterGateController : MonoBehaviour {
 	public GameObject BoomEffect_Excellent;
 	
 	public int myNum;
+
+	private bool pressedBefore = false;
 	// public  Component BarControlCompo;
 
-	public float GateSideRightX = 65.0f; //判断的是否死亡的临界值，右。确保这个值一定要在collider内！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
-	public float GateSideLeftX = 65.0f; //确保这个值一定要在collider内！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+	public float GateSideRightX = 67.0f; //判断的是否死亡的临界值，右。确保这个值一定要在collider内！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+	public float GateSideLeftX = 51.0f; //确保这个值一定要在collider内！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
 	void Start () {
 		CanvasObj = GameObject.FindGameObjectWithTag ("MyCanvas"); //we have to find gameobj in start(),stop dragging
 		GateObj = GameObject.FindGameObjectWithTag ("MyGate"); //we have to find gameobj in start(),stop dragging
@@ -87,6 +89,7 @@ public class EnterGateController : MonoBehaviour {
 			}
 		} else {
 			Debug.Log ("this happened");
+			pressedBefore = true;
 			return 0;
 		}
 	}
@@ -170,7 +173,14 @@ public class EnterGateController : MonoBehaviour {
 	}
 	
 	void germRePosition () {
-
+		if (pressedBefore)
+		{
+			this.gameObject.transform.position=new Vector2(69.8f,8.8f);
+			GermsObj.GetComponent<GermsController>().Germs[myNum].Pos = new Vector2(69.8f,8.8f);
+		}
+	
+		GermsObj.GetComponent<GermsController>().Germs[myNum].V=new Vector2(0,-0.5f);
+		
 	}
 	// private void OnGUI () {
 	// 	Debug.DrawLine (this.transform.position, GateObj.transform.position, Color.red);
