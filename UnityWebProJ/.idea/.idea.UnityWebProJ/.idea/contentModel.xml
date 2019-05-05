@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\a\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\a\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_UnityWebProJ.-69622372.00" t="ExcludeRecursive" />
+    <e p="D:\Unity_GitHub\WorkShopGame\UnityWebProJ" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="scripts" t="Include">
+          <e p="ClientDemo.cs" t="Include" />
+          <e p="NetModel.cs" t="Include" />
+          <e p="NetUtility.cs" t="Include" />
+          <e p="ServerDemo.cs" t="Include" />
+        </e>
+        <e p="testClientSocketIO.cs" t="Include" />
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+      <e p="UnityWebProJ.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="91061618-5230-4b1c-824d-63f547108e1a" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="534176131">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="579" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="579" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/scripts/NetUtility.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="154" column="25" selection-start-line="154" selection-start-column="25" selection-end-line="154" selection-end-column="25" />
+              <folding>
+                <marker date="1554253389023" expanded="true" signature="6:153" ph="..." />
+                <marker date="1554253389023" expanded="true" signature="241:6238" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="562:639" ph="/// 设置网络节点 ... " />
+                <marker date="1554253389023" expanded="true" signature="688:730" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="732:812" ph="/// 设置委托 ... " />
+                <marker date="1554253389023" expanded="true" signature="863:909" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="911:1011" ph="/// Initializes a new instance of the &lt;see cref=&quot;NetUtility&quot;/&gt; class. ... " />
+                <marker date="1554253389023" expanded="true" signature="1034:1337" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="1339:3161" ph="Server Part:" />
+                <marker date="1554253389023" expanded="true" signature="1361:1401" ph="/// 开启服务器 ... " />
+                <marker date="1554253389023" expanded="true" signature="1429:1594" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="1596:1671" ph="/// 异步连接回调 ... " />
+                <marker date="1554253389023" expanded="true" signature="1714:2070" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="2072:2149" ph="/// 异步接收消息回调 ... " />
+                <marker date="1554253389023" expanded="true" signature="2193:3149" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="2351:3145" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="2701:3022" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="2771:2811" ph="/* TODO:Object Processing! ... */" />
+                <marker date="1554253389023" expanded="true" signature="3164:3953" ph="Client Part" />
+                <marker date="1554253389023" expanded="true" signature="3185:3225" ph="/// 客户端连接 ... " />
+                <marker date="1554253389023" expanded="true" signature="3256:3413" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="3415:3494" ph="/// 发送消息 ... " />
+                <marker date="1554253389023" expanded="true" signature="3532:3941" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="3695:3938" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="3790:3855" ph="{...}" />
+                <marker date="1554253389023" expanded="false" signature="3956:6235" ph="Public Function" />
+                <marker date="1554253389023" expanded="true" signature="3981:4091" ph="/// 数据加字节头操作 ... " />
+                <marker date="1554253389023" expanded="true" signature="4126:4518" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="4187:4515" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="4254:4511" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="4520:4639" ph="/// 数据解析，拆解字节头，获取数据. ... " />
+                <marker date="1554253389023" expanded="true" signature="4683:5183" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="4816:5180" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="4883:5176" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="5018:5043" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="5185:5263" ph="/// 序列化数据. ... " />
+                <marker date="1554253389023" expanded="true" signature="5304:5734" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="5314:5642" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="5375:5638" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="5664:5731" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="5738:5847" ph="/// 反序列化数据. ... " />
+                <marker date="1554253389023" expanded="true" signature="5891:6223" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="5901:6134" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="5966:6130" ph="{...}" />
+                <marker date="1554253389023" expanded="true" signature="6156:6220" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/testClientSocketIO.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding>
+                <marker date="1554254790523" expanded="true" signature="6:170" ph="..." />
+                <marker date="1554254790523" expanded="true" signature="219:223" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/scripts/ServerDemo.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+              <folding>
+                <marker date="1554255224385" expanded="false" signature="6:75" ph="..." />
+                <marker date="1554255224385" expanded="true" signature="77:116" ph="/// 服务器实现. ... " />
+                <marker date="1554255224385" expanded="true" signature="156:735" ph="{...}" />
+                <marker date="1554255224385" expanded="true" signature="238:465" ph="{...}" />
+                <marker date="1554255224385" expanded="true" signature="339:412" ph="{...}" />
+                <marker date="1554255224385" expanded="true" signature="489:522" ph="{...}" />
+                <marker date="1554255224385" expanded="true" signature="538:733" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/scripts/ClientDemo.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+              <folding>
+                <marker date="1554253664875" expanded="false" signature="6:77" ph="..." />
+                <marker date="1554253664875" expanded="true" signature="78:116" ph="/// 客户端实现 ... " />
+                <marker date="1554253664875" expanded="true" signature="156:827" ph="{...}" />
+                <marker date="1554253664875" expanded="true" signature="215:413" ph="{...}" />
+                <marker date="1554253664875" expanded="true" signature="279:313" ph="{...}" />
+                <marker date="1554253664875" expanded="true" signature="442:825" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/scripts/NetModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding>
+                <marker date="1453444207000" expanded="false" signature="6:60" ph="..." />
+                <marker date="1453444207000" expanded="true" signature="123:270" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>serverIPEndPoint</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/NetUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/ServerDemo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/testClientSocketIO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/NetModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/ClientDemo.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/scripts/NetUtility.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/ClientDemo.cs" />
+        <option value="$PROJECT_DIR$/Assets/testClientSocketIO.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/ServerDemo.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="765" />
+    <option name="y" value="42" />
+    <option name="width" value="978" />
+    <option name="height" value="1089" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="91061618-5230-4b1c-824d-63f547108e1a" name="Default Changelist" comment="" />
+      <created>1554251230870</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554251230870</updated>
+      <workItem from="1554251250793" duration="240000" />
+      <workItem from="1554252384460" duration="2925000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3165000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.05764075" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/testClientSocketIO.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <marker date="1554254790523" expanded="true" signature="6:170" ph="..." />
+            <marker date="1554254790523" expanded="true" signature="219:223" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/ClientDemo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+          <folding>
+            <marker date="1554253664875" expanded="false" signature="6:77" ph="..." />
+            <marker date="1554253664875" expanded="true" signature="78:116" ph="/// 客户端实现 ... " />
+            <marker date="1554253664875" expanded="true" signature="156:827" ph="{...}" />
+            <marker date="1554253664875" expanded="true" signature="215:413" ph="{...}" />
+            <marker date="1554253664875" expanded="true" signature="279:313" ph="{...}" />
+            <marker date="1554253664875" expanded="true" signature="442:825" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/NetModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <marker date="1453444207000" expanded="false" signature="6:60" ph="..." />
+            <marker date="1453444207000" expanded="true" signature="123:270" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/NetUtility.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="154" column="25" selection-start-line="154" selection-start-column="25" selection-end-line="154" selection-end-column="25" />
+          <folding>
+            <marker date="1554253389023" expanded="true" signature="6:153" ph="..." />
+            <marker date="1554253389023" expanded="true" signature="241:6238" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="562:639" ph="/// 设置网络节点 ... " />
+            <marker date="1554253389023" expanded="true" signature="688:730" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="732:812" ph="/// 设置委托 ... " />
+            <marker date="1554253389023" expanded="true" signature="863:909" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="911:1011" ph="/// Initializes a new instance of the &lt;see cref=&quot;NetUtility&quot;/&gt; class. ... " />
+            <marker date="1554253389023" expanded="true" signature="1034:1337" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="1339:3161" ph="Server Part:" />
+            <marker date="1554253389023" expanded="true" signature="1361:1401" ph="/// 开启服务器 ... " />
+            <marker date="1554253389023" expanded="true" signature="1429:1594" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="1596:1671" ph="/// 异步连接回调 ... " />
+            <marker date="1554253389023" expanded="true" signature="1714:2070" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="2072:2149" ph="/// 异步接收消息回调 ... " />
+            <marker date="1554253389023" expanded="true" signature="2193:3149" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="2351:3145" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="2701:3022" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="2771:2811" ph="/* TODO:Object Processing! ... */" />
+            <marker date="1554253389023" expanded="true" signature="3164:3953" ph="Client Part" />
+            <marker date="1554253389023" expanded="true" signature="3185:3225" ph="/// 客户端连接 ... " />
+            <marker date="1554253389023" expanded="true" signature="3256:3413" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="3415:3494" ph="/// 发送消息 ... " />
+            <marker date="1554253389023" expanded="true" signature="3532:3941" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="3695:3938" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="3790:3855" ph="{...}" />
+            <marker date="1554253389023" expanded="false" signature="3956:6235" ph="Public Function" />
+            <marker date="1554253389023" expanded="true" signature="3981:4091" ph="/// 数据加字节头操作 ... " />
+            <marker date="1554253389023" expanded="true" signature="4126:4518" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="4187:4515" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="4254:4511" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="4520:4639" ph="/// 数据解析，拆解字节头，获取数据. ... " />
+            <marker date="1554253389023" expanded="true" signature="4683:5183" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="4816:5180" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="4883:5176" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="5018:5043" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="5185:5263" ph="/// 序列化数据. ... " />
+            <marker date="1554253389023" expanded="true" signature="5304:5734" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="5314:5642" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="5375:5638" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="5664:5731" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="5738:5847" ph="/// 反序列化数据. ... " />
+            <marker date="1554253389023" expanded="true" signature="5891:6223" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="5901:6134" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="5966:6130" ph="{...}" />
+            <marker date="1554253389023" expanded="true" signature="6156:6220" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/ServerDemo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding>
+            <marker date="1554255224385" expanded="false" signature="6:75" ph="..." />
+            <marker date="1554255224385" expanded="true" signature="77:116" ph="/// 服务器实现. ... " />
+            <marker date="1554255224385" expanded="true" signature="156:735" ph="{...}" />
+            <marker date="1554255224385" expanded="true" signature="238:465" ph="{...}" />
+            <marker date="1554255224385" expanded="true" signature="339:412" ph="{...}" />
+            <marker date="1554255224385" expanded="true" signature="489:522" ph="{...}" />
+            <marker date="1554255224385" expanded="true" signature="538:733" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
